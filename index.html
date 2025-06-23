@@ -5,18 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Meu portfólio</title>
 </head>
 
 <body>
     <header class="container text-center">
-        <img src="img/avatar-perfil.png" alt="avatar da Fernanda" class="rounded-circle" width="150" height="150" srcset="">
-        <p class="lead">Eu sou Fernanda_</p>
-        <h1>Eu ensino Programação</h1>
-        <p>Sou Engenheira de Computação e Pedagoga. Ensino pensamento computacional para estudantes do Ensino
-            Fundamental e Médio. Ensino sobre pensamento computacional usando HTML, CSS e JavaScript. Veja os projetos
-            que já desenvolvi!</p>
+        <img src="img/kevin.png" alt="avatar do Kevin" class="rounded-circle" width="150" height="150"
+            srcset="">
+        <p class="lead">Eu me chamo Kevin_</p>
+        <h1>Eu estudo Programação</h1>
+        <p>Sou estudante do Ensino Medio Pei do Estado de São Paulo, na cidade de Itu, Escola Prof Antônio Berreta! Estou estudando programação e aprendendo muito nessa área, meu interesse está se tornando geuíno pela matéria. E nesse portifólio vou apresentar alguns trabalhos que ja produzi até o momento. Espero que goste
+        </p>
         <p>Minhas habilidades</p>
         <div>
             <p class="badge bg-secondary">HTML</p>
@@ -25,22 +26,151 @@
             <p class="badge bg-secondary">Scratch</p>
         </div>
     </header>
-    <main class="container">
+    <main class="container mt-5">
         <h2>Meus projetos</h2>
         <div class="row">
+            <!-- Projeto 1 -->
             <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
+                <div class="card">
+                    <img src="img/Corrida.png" class="card-img-top" alt="Projeto Jogo de Corrida">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Meu jogo de corrida Personalizado</h5>
+                        <p class="card-text">Este projeto é um jogo que criei graças aos materiais didáticos apresentados e à ajuda do professor
+                            que me auxiliu muito quando meu código apresentava defeito. Cada jogador anda um passo por sua tecla prdefinida. E quando 
+                            algum jogador ultrapassa a linha de chegada o código identifica que jogador chegou, e exibe um texto na tela indicando 
+                            qual jogador venceu a pertida.
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Veja
+                            o projeto</button>
                     </div>
-                  </div>
+                </div>
+            </div>
+            <!-- Projeto 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/Monalisa.png" class="card-img-top" alt="Imagem do projeto de biblioteca virtual">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto Monalisa.</h5>
+                        <p class="card-text">Esse projeto é um rosto, feito pelo p5.js no qual 
+                            os olhos seguem o cursor do mouse
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/Quente e Frio.png" class="card-img-top" alt="Imagem do projeto Quente e Frio">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto Quente e Frio.
+                        </h5>
+                        <p class="card-text">Este é um projeto parecido com um jogo, onde você proucura
+                            o alvo, interagindo com o código e com o cursor do mouse
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">Veja
+                            o projeto</button>
+                    </div>
+                </div>
             </div>
         </div>
-
     </main>
+
+    <!-- Modal 1 -->
+    <div class="modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Meu Jogo de Corrida Personalizado.</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>O projeto é um jogo de criação minha com inspiração e auxílio com o material didático da
+                        matéria de programação, e auxilio do professor Rodrigo. Que vem ajudando a classe desde 
+                        o começo do ano.</p>
+                    <p>O jogo funciona das seguintes formas:</p>
+                    <p>O código é ativado após clicar em play. Irá aprecer 4 jogadors, que se moveram com suas
+                        respectivas teclas. A, S, D, e F.  </p>
+                    <p>Após iniciar, deverá ser clicado 1 (uma) vez no campo vermelho. Ele ficará verde, o que
+                         significa que a corrida começou. O jogador que ultrapassar a linha de chegada primeiro,
+                        ganha a corrida. Esse código foi criado para puro entreterimento, podendo ser usado de 
+                        diversas formas criativas. </p>
+                    <img src="img/Corrida.png" class="img-fluid w-100"
+                        alt="Imagem representativa do projeto">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://editor.p5js.org/kekeo/full/xtvK8-aAU">Ver projeto ao vivo</a>
+                    <a href="https://editor.p5js.org/kekeo/sketches/xtvK8-aAU">Ver código do projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 2 -->
+    <div class="modal" id="modal2" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Projeto Monalisa.</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>O projeto consiste em uma aplicação interativa, de um rosto desenhado e pintado por cores fortes.
+                    </p>
+                    <p>Foi o primeiro projeto que eu criei, então não está muito profissional e muito menos 
+                        criativo.</p>
+                    <p>Além de ser um código criado apenas para testes, ele importa muito para mim. Pois ele foi quem me
+                         trouxe inspiração para continuar estudando e aplicando conhecimentos sobre programação.
+                    </p>
+                    <img src="img/Monalisa.png" class="img-fluid w-100"
+                        alt="Imagem representativa do projeto">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://editor.p5js.org/kekeo/full/uWTg0YL0w">Ver projeto ao
+                        vivo</a>
+                    <a href="https://editor.p5js.org/kekeo/sketches/uWTg0YL0w">Ver código do
+                        projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal" id="modal3" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Projeto Quente e Frio</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>O projeto é uma aplicação educativa interativa focada em entreterimento puro. O código gera
+                        toda vez que iniciado, um ponto aleatório do plano, e utilizando o cursor do mouse, o objetivo
+                        final é encontrar o ponto
+                    </p>
+                    <p>Quando iniciado, um círculo começa acompanhar o cursor do mouse, ficando maior por cada vez mais
+                        longe, e menor a cada vez mais perto.</p>
+                    <p>Assim que encontrado, o círculo se fecha totalmente, revelando o ponto escondido. E ao lado, uma 
+                        frase surge: Você encontrou.</p>
+                    <img src="img/Quente e Frio.png" alt="Projeto 3" class="img-fluid w-100">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://editor.p5js.org/kekeo/full/Wjl2H9-jI">Ver projeto ao vivo</a>
+                    <a href="https://editor.p5js.org/kekeo/sketches/Wjl2H9-jI">Ver Código do projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container py-5">
+        <h2>Entre em contato</h2>
+        <div>
+            <i class="bi bi-github"></i>
+            <a href="https://github.com/femascheti">GitHub</a>
+        </div>
+        <p class="my-5 text-center">© Copyright 2025. Produzido por Kevin Oliveira</p>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
